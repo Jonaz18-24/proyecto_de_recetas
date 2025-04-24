@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Receta - Cocina Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="recipe-details-page">
+  <header>
+    <h1>🍽️ Nombre de la receta</h1>
+    <img src="img/recipe-image.jpg" alt="Imagen de la receta">
+    <p>⏱️ Tiempo de preparación: 30 min | 🔥 Dificultad: Media</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Ingredientes:</h2>
+      <ul>
+        <li>1 Taza de arroz</li>
+        <li>2 Pechugas de pollo</li>
+        <!-- Aquí se agregarían los ingredientes dinámicamente -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instrucciones:</h2>
+      <ol>
+        <li>Paso 1: Cocinar el arroz...</li>
+        <li>Paso 2: Sancochar el pollo...</li>
+        <!-- Aquí se agregarían las instrucciones dinámicamente -->
+      </ol>
+    </section>
+
+    <section>
+      <button>⭐ Calificar</button>
+      <button>❤️ Guardar en Favoritos</button>
+      <a href="home.html"><button>⬅ Volver al Inicio</button></a>
+    </section>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get("id"));
+    
+      const recetaDemo = document.querySelector("main");
+    
+      fetch("data/recipes.json")
+        .then(res => res.json())
+        .then(recetasBase => {
+          const recetasLocales = JSON.parse(localStorage.getItem("recetas")) || [];
+          const todas = [...recetasBase, ...recetasLocales];
+          const receta = todas.find(r => r.id === id);
+    
+          if (!receta) {
+            recetaDemo.innerHTML = "<p>Receta no encontrada</p>";
+            return;
+          }
+    
+          recetaDemo.innerHTML = `
+            <h1>${receta.nombre}</h1>
+            <img src="${receta.imagen}" class="img-receta" alt="${receta.nombre}">
+            <p><strong>Tiempo:</strong> ${receta.tiempo} min</p>
+            <p><strong>Dificultad:</strong> ${receta.dificultad}</p>
+    
+            <h3>Ingredientes:</h3>
+            <ul>${receta.ingredientes.map(i => `<li>${i}</li>`).join('')}</ul>
+    
+            <h3>Instrucciones:</h3>
+            <ol>${receta.instrucciones.map(p => `<li>${p}</li>`).join('')}</ol>
+    
+            <a href="index.html"><button>⬅ Volver</button></a>
+          `;
+        });
+    });
+    </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

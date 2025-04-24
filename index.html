@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cocina Explorer - Inicio</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="home-page">
+  <header>
+    <h1>🍽️ Cocina Explorer</h1>
+    <a href="upload.html"><button>➕ Subir Receta</button></a>
+    <a href="profile.html"><button>👤 Mi Perfil</button></a>
+    <a href="login.html"><button>🚪 Cerrar sesión</button></a>
+  </header>
+
+  <main>
+    <!-- Encabezado de bienvenida -->
+    <section class="hero">
+      <h1>Descubre Recetas Deliciosas</h1>
+      <p>Explora ideas para cada momento del día</p>
+      <input type="text" placeholder="Buscar receta..." class="busqueda">
+    </section>
+  
+    <!-- Categorías -->
+    <section class="categorias-section">
+      <h2>Categorías</h2>
+      <div class="categorias">
+        <div class="categoria">
+          <img src="img/archivoc.webp" alt="Desayuno">
+          <h4>Desayuno</h4>
+          <p>Empieza tu día con energía: recetas fáciles y nutritivas.</p>
+          <div class="rating" data-rated="0">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+
+          </div>
+          <div class="feedback-box">
+            <p>¿Te gustó esta receta?</p>
+            <div class="feedback-buttons">
+              <button class="like-btn">👍 Me gustó</button>
+              <button class="dislike-btn">👎 No me gustó</button>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="categoria">
+          <img src="img/almuerzo.jpg" alt="Almuerzo">
+          <h4>Almuerzo</h4>
+          <p>Platos completos para recargar fuerzas a mitad del día.</p>
+        </div>
+        <div class="categoria">
+          <img src="img/cena.jpg" alt="Cena">
+          <h4>Cena</h4>
+          <p>Recetas ligeras y sabrosas para terminar bien la jornada.</p>
+        </div>
+        <div class="categoria">
+          <img src="img/postres.jpg" alt="Postres">
+          <h4>Postres</h4>
+          <p>Dulces irresistibles para todos los gustos y ocasiones.</p>
+        </div>
+        <div class="categoria">
+          <img src="img/bebidas.jpg" alt="Bebidas">
+          <h4>Bebidas</h4>
+          <p>Refrescos naturales, smoothies y bebidas creativas.</p>
+        </div>
+      </div>
+      
+    </section>
+    <h2 class="titulo titulo--home">Las mejores recetas de cocina paso a paso</h2>
+  
+    <!-- Recetas destacadas -->
+    <section class="recetas-destacadas">
+      <h2>Recetas Populares</h2>
+      <div class="grid-recetas">
+        <article class="receta">
+          <img src="img/pancakes.jpg" alt="Pancakes esponjosos">
+          <h3>Pancakes esponjosos</h3>
+          <p>Perfectos para un desayuno dulce y rápido.</p>
+          <div class="rating" data-receta="pancakes">
+            ★★★★★
+          </div>
+        </article>
+        
+        <article class="receta">
+          <img src="img/ensalada.jpg" alt="Ensalada fresca">
+          <h3>Ensalada fresca</h3>
+          <p>Ligera, saludable y llena de sabor.</p>
+        </article>
+        <!-- Puedes añadir más recetas aquí -->
+      </div>
+    </section>
+  </main>
+  
+    <section class="carrusel-recetas">
+      <button class="btn-carrusel left">&#10094;</button>
+      <div class="contenedor-carrusel">
+        <div class="slide-receta">
+          <img src="img/ensalada.jpg" alt="Ensalada">
+          <h4>Ensalada de garbanzos con tiras de calabacín</h4>
+          <div class="info-receta">
+            <span>⏱️ 25 min</span>
+            <div class="acciones">
+              ❤️ 🔁
+            </div>
+          </div>
+        </div>
+        <div class="slide-receta">
+          <img src="img/bolas-carne.jpg" alt="Carne">
+          <h4>Bolas de carne picada envueltas en beicon</h4>
+          <div class="info-receta">
+            <span>⏱️ 60 min</span>
+            <div class="acciones">
+              ❤️ 🔁
+            </div>
+          </div>
+        </div>
+        <div class="slide-receta">
+          <img src="img/merluza.jpg" alt="Merluza">
+          <h4>Merluza gratinada con risotto de setas</h4>
+          <div class="info-receta">
+            <span>⏱️ 60 min</span>
+            <div class="acciones">
+              ❤️ 🔁
+            </div>
+          </div>
+        </div>
+        <div class="slide-receta">
+          <img src="img/pollo.jpg" alt="Pollo">
+          <h4>Pollo relleno de carne y pistachos</h4>
+          <div class="info-receta">
+            <span>⏱️ 90 min</span>
+            <div class="acciones">
+              ❤️ 🔁
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-carrusel right">&#10095;</button>
+    </section>
+    
+    <footer>
+      <div class="mega-footer">
+        <div class="footer-categorias">
+          <div class="footer-col">
+            <h3>POSTRES</h3>
+            <ul>
+              <li>Recetas de galletas</li>
+              <li>Tarta de manzana</li>
+              <li>Madalenas caseras</li>
+              <li>Bizcocho en freidora de aire</li>
+              <li>Recetas de tartas</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>PESCADOS</h3>
+            <ul>
+              <li>Lubina al horno</li>
+              <li>Recetas de salmón</li>
+              <li>Recetas de rape</li>
+              <li>Recetas de pescado al horno</li>
+              <li>Sardinas en escabeche</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>CARNES</h3>
+            <ul>
+              <li>Paletilla de cordero al horno</li>
+              <li>Recetas con muslos de pollo</li>
+              <li>Fideos con costilla</li>
+              <li>Costillas adobadas</li>
+              <li>Tallarines con pollo</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>LO MÁS BUSCADO</h3>
+            <ul>
+              <li>Recetas con calabacín</li>
+              <li>Recetas de ñoquis</li>
+              <li>Recetas de macarrones</li>
+              <li>Recetas con judías verdes</li>
+              <li>Receta de guiso de lentejas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Aviso legal</a>
+          <a href="#">Contacto</a>
+          <a href="#">Publicidad</a>
+          <a href="#">Staff</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Notificaciones</a>
+          <a href="#">Gestionar Cookies</a>
+          <a href="#">Política de cookies</a>
+          <a href="#">Política de afiliación</a>
+          <a href="#">Canal ético</a>
+          <span><i>ISSN 2938-8651</i></span>
+        </div>
+        <div class="footer-rba">
+          <strong>RBA</strong>
+          <div class="rba-links">
+            <span>Semana</span>
+            <span>El Mueble</span>
+            <span>InStyle</span>
+            <span>National Geographic</span>
+            <span>NG Viajes</span>
+            <span>NG Historia</span>
+            <span>Clara</span>
+            <span>Cuerpomente</span>
+            <span>Arquitectura y Diseño</span>
+            <span>Saber Vivir</span>
+            <span>Escuela Cuerpomente</span>
+            <span>Speak Up</span>
+            <span>Interiores</span>
+            <span>Casas de casa</span>
+          </div>
+        </div>
+      </div>      
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

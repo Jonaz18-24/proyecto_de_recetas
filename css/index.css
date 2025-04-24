@@ -1,0 +1,296 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff9f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ff7043;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+header a button {
+  background-color: white;
+  border: none;
+  color: #ff7043;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header a button:hover {
+  background-color: #ffe1d9;
+}
+
+/* Hero section */
+.hero {
+  background: url('../img/bg-hero.jpg') no-repeat center center/cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  background-color: #ffab91;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.busqueda {
+  padding: 0.75rem 1rem;
+  width: 60%;
+  max-width: 500px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Categorías */
+.categorias-section {
+  padding: 2rem;
+}
+
+.categorias {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoria {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+.categoria img {
+  width: 100%;
+  border-radius: 12px;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* Recetas populares */
+.recetas-destacadas {
+  padding: 2rem;
+  background-color: #fff3e0;
+}
+
+.grid-recetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.receta {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  width: 240px;
+  text-align: center;
+}
+
+.receta img {
+  width: 100%;
+  border-radius: 12px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Carrusel */
+.carrusel-recetas {
+  position: relative;
+  padding: 2rem;
+  background-color: #ffe0b2;
+  overflow: hidden;
+}
+
+.contenedor-carrusel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.slide-receta {
+  min-width: 250px;
+  scroll-snap-align: start;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.slide-receta img {
+  width: 100%;
+  border-radius: 12px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.info-receta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.acciones {
+  font-size: 1.2rem;
+}
+
+/* Botones carrusel */
+.btn-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.btn-carrusel.left {
+  left: 1rem;
+}
+
+.btn-carrusel.right {
+  right: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #424242;
+  color: white;
+  padding: 2rem;
+}
+
+.mega-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.footer-col h3 {
+  color: #ffccbc;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #ffccbc;
+  text-decoration: none;
+}
+
+.footer-rba {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.rba-links span {
+  display: inline-block;
+  margin: 0.25rem 0.5rem;
+  color: #bdbdbd;
+}
+.rating span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ccc; /* color por defecto (gris) */
+  transition: color 0.3s;
+}
+
+.rating span.selected {
+  color: #FFD700; /* color amarillo para calificación */
+}
+
+.like-btn, .dislike-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.like-btn.selected, .dislike-btn.selected {
+  background-color: #ffd700;
+  color: #000;
+}
+body.home-page {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header button {
+  background: #1f1f1f;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background: #333333;
+}

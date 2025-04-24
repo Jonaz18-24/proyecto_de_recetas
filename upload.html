@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Subir Receta - Cocina Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="upload-recipe-page">
+  <header>
+    <h1>📤 Subir Nueva Receta</h1>
+  </header>
+
+  <main>
+    <form action="" method="POST" enctype="multipart/form-data">
+      <label>📌 Nombre de la receta:</label>
+      <input type="text" name="nombre" required>
+
+      <label>📷 Imagen de la receta:</label>
+      <input type="file" name="imagen" required>
+
+      <label>⏱️ Tiempo estimado (min):</label>
+      <input type="number" name="tiempo" required>
+
+      <label>🔥 Dificultad:</label>
+      <select name="dificultad" required>
+        <option value="Fácil">Fácil</option>
+        <option value="Media">Media</option>
+        <option value="Alta">Alta</option>
+      </select>
+
+      <label>📝 Ingredientes:</label>
+      <textarea name="ingredientes" required></textarea>
+
+      <label>📖 Instrucciones:</label>
+      <textarea name="instrucciones" required></textarea>
+
+      <button type="submit">✅ Publicar Receta</button>
+    </form>
+
+    <a href="home.html"><button>⬅ Volver al Inicio</button></a>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

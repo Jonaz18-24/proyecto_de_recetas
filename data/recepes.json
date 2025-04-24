@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "nombre": "Ají de Gallina",
+      "imagen": "img/aji.jpg",
+      "tiempo": 45,
+      "dificultad": "Media"
+    },
+    {
+      "id": 2,
+      "nombre": "Tallarines Rojos",
+      "imagen": "img/tallarines.jpg",
+      "tiempo": 35,
+      "dificultad": "Fácil"
+    }
+  ]
+  
