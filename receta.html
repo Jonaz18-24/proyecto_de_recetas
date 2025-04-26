@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receta - Cocina Explorer</title>
+  <link rel="stylesheet" href="css/receta.css">
+</head>
+<body class="receta-page">
+  <header>
+    <h1>🍽️ Cocina Explorer</h1>
+    <a href="index.html"><button>🏠 Inicio</button></a>
+    <a href="upload.html"><button>➕ Subir Receta</button></a>
+    <a href="profile.html"><button>👤 Mi Perfil</button></a>
+    <a href="login.html"><button>🚪 Cerrar sesión</button></a>
+  </header>
+
+  <main>
+    <section class="receta-detalle">
+      <h2 id="nombre-receta">Pancakes Esponjosos</h2>
+      <img src="img/pancakes.jpg" alt="Pancakes esponjosos" class="img-receta">
+      
+      <div class="informacion-receta">
+        <p><strong>Autor:</strong> Juan Pérez</p>
+        <p><strong>Categoría:</strong> Desayuno</p>
+        <p><strong>Dificultad:</strong> Fácil</p>
+        <p><strong>Tiempo estimado:</strong> 30 min</p>
+        
+        <div class="rating">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          <p>Calificación: 4.5/5</p>
+        </div>
+      </div>
+
+      <div class="ingredientes">
+        <h3>Ingredientes</h3>
+        <ul>
+          <li>1 taza de harina</li>
+          <li>1 huevo</li>
+          <li>1 taza de leche</li>
+          <li>2 cucharadas de azúcar</li>
+          <li>1 cucharadita de polvo de hornear</li>
+        </ul>
+      </div>
+
+      <div class="pasos">
+        <h3>Pasos</h3>
+        <ol>
+          <li>Mezcla todos los ingredientes secos.</li>
+          <li>Agrega los ingredientes líquidos y mezcla bien.</li>
+          <li>Cocina en una sartén antiadherente.</li>
+          <li>Sirve con miel o frutas frescas.</li>
+        </ol>
+      </div>
+      <!-- Sección de lista de compras -->
+        <section class="lista-compras">
+            <h3>Lista de compras</h3>
+            <ul id="lista-compras">
+            <li>
+                <input type="checkbox" id="ingrediente1">
+                <label for="ingrediente1">Tomate</label>
+            </li>
+            <li>
+                <input type="checkbox" id="ingrediente2">
+                <label for="ingrediente2">Pollo</label>
+            </li>
+            <li>
+                <input type="checkbox" id="ingrediente3">
+                <label for="ingrediente3">Ajo</label>
+            </li>
+            <!-- Añadir más ingredientes dinámicamente según la receta -->
+            </ul>
+            <button id="exportar-lista">Exportar Lista</button>
+        </section>
+        <!-- Receta con autor y calificación -->
+        <article class="receta">
+            <img src="img/receta1.jpg" alt="Receta 1">
+            <h3>Receta 1</h3>
+            <p>Autor: Juan Pérez</p>
+            <div class="rating">★★★★☆</div>
+        </article>
+  
+    
+  
+
+      <section class="comentarios">
+        <h3>Comentarios</h3>
+        <div id="comentarios-lista">
+          <!-- Aquí se irán mostrando los comentarios -->
+        </div>
+        
+        <div class="form-comentario">
+          <input type="text" id="nombre-comentario" placeholder="Tu nombre">
+          <textarea id="comentario-texto" placeholder="Escribe tu comentario..."></textarea>
+          <button id="enviar-comentario">Enviar Comentario</button>
+        </div>
+      </section>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cocina Explorer - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/receta.js"></script>
+</body>
+</html>

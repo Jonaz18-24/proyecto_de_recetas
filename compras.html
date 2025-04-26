@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="css/compras.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Lista de Compras</h1>
+    <ul id="lista-compras">
+      <li><input type="checkbox"> Pollo</li>
+      <li><input type="checkbox"> Arroz</li>
+      <li><input type="checkbox"> Ají amarillo</li>
+      <li><input type="checkbox"> Cebolla roja</li>
+      <li><input type="checkbox"> Ajo</li>
+      
+    </ul>
+
+    <div class="acciones">
+      <button onclick="agregarItem()">➕ Agregar</button>
+      <button onclick="exportarLista()">📄 Exportar</button>
+      <button onclick="enviarCorreo()">✉️ Enviar por correo</button>
+    </div>
+
+    <input type="text" id="nuevo-item" placeholder="Nuevo ingrediente...">
+  </div>
+
+  <script src="js/compras.js"></script>
+</body>
+</html>

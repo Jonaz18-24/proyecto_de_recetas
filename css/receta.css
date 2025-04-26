@@ -1,0 +1,181 @@
+/* Estilo general para la página de receta */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  header button:hover {
+    background-color: #555;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .receta-detalle {
+    text-align: center;
+  }
+  
+  .receta-detalle h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .receta-detalle .img-receta {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .informacion-receta p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .rating span {
+    color: #FFD700;
+    font-size: 1.5rem;
+  }
+  
+  .ingredientes, .pasos {
+    margin: 20px 0;
+  }
+  
+  .ingredientes ul, .pasos ol {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .comentarios {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comentarios h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  #comentarios-lista {
+    margin-bottom: 20px;
+  }
+  
+  .comentarios .form-comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .comentarios .form-comentario input, .comentarios .form-comentario textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .comentarios .form-comentario button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .comentarios .form-comentario button:hover {
+    background-color: #444;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+/* Estilos para el sistema de calificación con estrellas */
+.rating {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .rating .star {
+    color: #ccc;
+    margin-right: 5px;
+  }
+  
+  .rating .star:hover, .rating .star.selected {
+    color: #FFD700;
+  }
+  
+  #rating-feedback {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .back-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+  }
+  
+  .back-btn:hover {
+    background-color: #444;
+  }
+  
